@@ -1,0 +1,41 @@
+### Step by step instructions to build
+
+- [] Create server directory
+- [] from server directory
+- [] run `yarn init`
+- [] yarn add express
+- [] touch app.js
+- [] `yarn add eslint --save-dev`
+- [] `./node_modules/.bin/eslint --init`
+- [] touch .gitignore
+- [] ignore /node_modules
+- [] npm i nodemon --save-dev
+- [] in app.js create express instance and serve on port
+- [] `npm install graphql express-graphql`
+- [] in app.js create graphqlHTTP instance
+- [] add middle-ware create endpoint for request to be handed to the graphql instance (as a function which accepts the schema object) and graphiql: true
+- [] touch schema/schema.js
+- [] const graphql = require('graphql');
+- [] destructure {GraphQLObjectType, GraphQLString, GraphQLSchema, GraphQLID, GraphQLList, GraphQLNonNull}  from graphql
+- [] define object types on the graph eg: BookType = new GraphQLObjectType() function takes an object to setup
+- [] define root query eg: RootQuery = new GraphQLObjectType() 
+- [] export the schema
+- [] define schema in app.js and pass it to the graphql endpoint
+- [] start mongo daemon `mongod`
+- [] open mongo `use {insert databse name}`}
+- [] `npm i mongoose` & require mongoose & connect to database
+- [] mkdir models and create .js files for each model type eg: book, author
+- [] set up the mongoose models
+- [] require the models in the schema file
+- [] add the mutation to the schema
+- [] test in graphiql
+- []
+- []
+- []
+- []
+- []
+- []
+- []
+- []
+- []
+- []
