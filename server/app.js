@@ -6,12 +6,14 @@ require('dotenv').config();
 
 const app = express();
 
-mongoose.connect(process.env.MONGOOSE_DATABASE, ()=> {
-  console.log('error connecting to database is mongo running?');
-});
+mongoose.connect(process.env.MONGOOSE_DATABASE);
 
 mongoose.connection.once('open', () => {
-  console.log('connected to database');
+  console.log('Connected to database');
+});
+
+mongoose.connection.once('error', () => {
+  console.log('Error connecting to database. Is mongo running...?');
 });
 
 app.use('/graphql', graphqlHTTP({
