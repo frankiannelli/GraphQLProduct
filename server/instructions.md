@@ -5,7 +5,7 @@
 - [] run `yarn init`
 - [] yarn add express
 - [] touch app.js
-- [] `yarn add eslint --save-dev`
+- [] `yarn add eslint --dev`
 - [] `./node_modules/.bin/eslint --init`
 - [] touch .gitignore
 - [] ignore /node_modules
